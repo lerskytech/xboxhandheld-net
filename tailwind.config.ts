@@ -7,7 +7,24 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            '--tw-prose-borders': '#4b5563', // gray-600
+             table: {
+                display: 'block',
+                overflowX: 'auto',
+             },
+          },
+        },
+        invert: {
+            css: {
+                '--tw-prose-borders': '#4b5563', // gray-600
+            }
+        }
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
