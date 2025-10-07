@@ -41,19 +41,31 @@ export default function Home() {
         <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
           <h3 className="text-2xl font-bold mb-4">Affiliate Links</h3>
           <div className="space-y-6">
-            <AffiliateCard 
+            <AffiliateCard
               productName="ROG Xbox Ally X"
-              imageUrl="https://placehold.co/600x400/1a202c/718096"
               price="$799"
-              retailer="Amazon"
-              affiliateLink="[AMAZON_AFFILIATE_LINK]"
+              imageUrl="https://placehold.co/600x400/1a202c/718096?text=Ally+X"
+              specs={[
+                'AMD Ryzen Z2 Processor',
+                '7-inch 1080p 120Hz Display',
+                '1TB SSD Storage',
+                'Up to 3hr Battery Life',
+              ]}
+              affiliateUrl="[AMAZON_AFFILIATE_LINK]"
+              availability="http://schema.org/PreOrder"
             />
-            <AffiliateCard 
+            <AffiliateCard
               productName="ROG Xbox Ally (Standard)"
-              imageUrl="https://placehold.co/600x400/2d3748/a0aec0"
               price="$599"
-              retailer="Best Buy"
-              affiliateLink="[BESTBUY_AFFILIATE_LINK]"
+              imageUrl="https://placehold.co/600x400/2d3748/a0aec0?text=Ally+Standard"
+              specs={[
+                'AMD Ryzen Z1 Processor',
+                '7-inch 1080p 120Hz Display',
+                '512GB SSD Storage',
+                'Up to 2hr Battery Life',
+              ]}
+              affiliateUrl="[BESTBUY_AFFILIATE_LINK]"
+              availability="http://schema.org/PreOrder"
             />
           </div>
         </div>
