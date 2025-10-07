@@ -9,9 +9,9 @@ export default function Home() {
         <section className="relative bg-cover bg-center p-12 rounded-lg shadow-lg text-center mb-8 h-80 flex flex-col justify-center items-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1593305842137-2d4a1a459357?q=80&w=2670&auto=format&fit=crop')" }}>
           <div className="absolute inset-0 bg-black opacity-60 rounded-lg"></div>
           <div className="relative z-10">
-          <h1 className="text-5xl font-bold text-white mb-4">The Xbox Handheld is Coming</h1>
+          <h1 className="text-6xl font-bold text-white mb-4 animate-fade-in-down">The Xbox Handheld is Coming</h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">Your ultimate source for news, reviews, and deals on the future of portable Xbox gaming.</p>
-            <a href="#latest-news" className="mt-8 inline-block bg-xbox-green text-white font-bold py-3 px-10 rounded-full hover:bg-xbox-light-green hover:text-black transition-all duration-300 shadow-lg transform hover:scale-105">Explore News</a>
+            <a href="#latest-news" className="mt-8 inline-block bg-xbox-green text-white font-bold py-4 px-12 rounded-full hover:bg-xbox-light-green hover:text-black transition-all duration-300 shadow-2xl transform hover:scale-110 animate-fade-in-up">Explore News</a>
           </div>
         </section>
 
@@ -20,19 +20,27 @@ export default function Home() {
           <h2 id="latest-news" className="text-4xl font-bold border-b-4 border-xbox-green pb-3 mb-8">Latest News</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Sample Article 1 */}
-            <div className="bg-xbox-dark rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl border border-gray-800 hover:border-xbox-green">
+            <div className="bg-xbox-dark rounded-lg shadow-2xl overflow-hidden transition-all duration-300 group border-2 border-transparent hover:border-xbox-green">
+              <div className="relative h-40 bg-gray-700">{/* Placeholder for an image */}
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                  <h3 className="text-2xl font-bold text-white text-center p-4">Official Announcement Soon?</h3>
+                </div>
+              </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Official Announcement Soon?</h3>
                 <p className="text-gray-300 mb-4">Sources say Microsoft is gearing up for a major reveal in the coming weeks.</p>
-                <a href="#" className="text-xbox-green hover:text-xbox-light-green font-semibold transition-colors">Read More &rarr;</a>
+                <a href="#" className="text-xbox-light-green font-bold group-hover:text-white transition-colors">Read More &rarr;</a>
               </div>
             </div>
             {/* Sample Article 2 */}
-            <div className="bg-xbox-dark rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl border border-gray-800 hover:border-xbox-green">
+            <div className="bg-xbox-dark rounded-lg shadow-2xl overflow-hidden transition-all duration-300 group border-2 border-transparent hover:border-xbox-green">
+              <div className="relative h-40 bg-gray-700">{/* Placeholder for an image */}
+                <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+                  <h3 className="text-2xl font-bold text-white text-center p-4">Official Announcement Soon?</h3>
+                </div>
+              </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Leaked Specs and Performance</h3>
                 <p className="text-gray-300 mb-4">A new leak appears to confirm the processor and screen details. Here&apos;s what we know.</p>
-                <a href="#" className="text-xbox-green hover:text-xbox-light-green font-semibold transition-colors">Read More &rarr;</a>
+                <a href="#" className="text-xbox-light-green font-bold group-hover:text-white transition-colors">Read More &rarr;</a>
               </div>
             </div>
             {/* Add more articles as needed */}
