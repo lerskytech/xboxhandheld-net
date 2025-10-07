@@ -39,28 +39,28 @@ const AffiliateCard: React.FC<AffiliateCardProps> = ({
   };
 
   return (
-    <div className="bg-gray-700 rounded-lg shadow-lg overflow-hidden border border-gray-600 max-w-sm mx-auto">
+    <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden border border-gray-700 transition-all duration-300 hover:shadow-2xl hover:border-green-500 max-w-sm mx-auto">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
       />
       <div className="relative h-48 w-full">
-        <Image src={imageUrl} alt={productName} layout="fill" objectFit="cover" />
+        <Image src={imageUrl} alt={productName} layout="fill" objectFit="cover" className="transition-transform duration-300 group-hover:scale-105" />
       </div>
-      <div className="p-4">
-        <h3 className="text-lg font-bold text-white">{productName}</h3>
-        <ul className="text-sm text-gray-300 mt-2 list-disc list-inside space-y-1">
+      <div className="p-6">
+        <h3 className="text-xl font-bold text-white">{productName}</h3>
+        <ul className="text-sm text-gray-400 mt-3 list-disc list-inside space-y-1">
           {specs.map((spec, index) => (
             <li key={index}>{spec}</li>
           ))}
         </ul>
-        <div className="flex justify-between items-center mt-4">
-          <p className="text-xl font-bold text-green-400">{price}</p>
+        <div className="flex justify-between items-center mt-6">
+          <p className="text-2xl font-bold text-green-400">{price}</p>
           <a 
             href={trackingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-green-500 text-white font-bold py-2 px-4 rounded hover:bg-green-600 transition-colors"
+            className="bg-green-600 text-white font-bold py-2 px-5 rounded-lg hover:bg-green-500 transition-colors shadow-md hover:shadow-lg"
           >
             Buy Now
           </a>
