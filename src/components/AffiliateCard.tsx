@@ -39,29 +39,28 @@ const AffiliateCard: React.FC<AffiliateCardProps> = ({
   };
 
   return (
-    <div className="bg-xbox-dark rounded-lg shadow-2xl overflow-hidden border-2 border-transparent hover:border-xbox-green transition-all duration-300 group max-w-sm mx-auto">
+    <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden border border-gray-700 transition-all duration-300 hover:shadow-2xl hover:border-green-500 max-w-sm mx-auto">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
       />
       <div className="relative h-48 w-full">
-        <Image src={imageUrl} alt={productName} layout="fill" objectFit="cover" className="transition-transform duration-500 group-hover:scale-110" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
-        <h3 className="absolute bottom-4 left-4 text-2xl font-bold text-white">{productName}</h3>
+        <Image src={imageUrl} alt={productName} layout="fill" objectFit="cover" className="transition-transform duration-300 group-hover:scale-105" />
       </div>
-      <div className="p-6 bg-xbox-dark">
-        <ul className="text-base text-gray-300 space-y-2">
+      <div className="p-6">
+        <h3 className="text-xl font-bold text-white">{productName}</h3>
+        <ul className="text-sm text-gray-400 mt-3 list-disc list-inside space-y-1">
           {specs.map((spec, index) => (
-            <li key={index} className="flex items-center gap-2"><span className="text-xbox-green">&#10003;</span>{spec}</li>
+            <li key={index}>{spec}</li>
           ))}
         </ul>
-        <div className="flex justify-between items-center mt-6 pt-4 border-t-2 border-gray-800">
-          <p className="text-3xl font-bold text-xbox-light-green">{price}</p>
+        <div className="flex justify-between items-center mt-6">
+          <p className="text-2xl font-bold text-green-400">{price}</p>
           <a 
             href={trackingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-xbox-green text-white font-bold py-3 px-6 rounded-lg hover:bg-xbox-light-green hover:text-black transition-all duration-300 shadow-lg transform hover:scale-105"
+            className="bg-green-600 text-white font-bold py-2 px-5 rounded-lg hover:bg-green-500 transition-colors shadow-md hover:shadow-lg"
           >
             Buy Now
           </a>
