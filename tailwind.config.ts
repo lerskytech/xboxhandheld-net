@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'xbox-green': '#107C10',
+        'xbox-light-green': '#9BF00B',
+        'xbox-dark': '#1e1e1e',
+      },
       typography: {
         DEFAULT: {
           css: {
