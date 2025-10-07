@@ -27,7 +27,7 @@ export default function Home() {
             <div className="bg-gray-700 rounded-lg shadow-lg overflow-hidden">
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">Leaked Specs and Performance</h3>
-                <p className="text-gray-300 mb-4">A new leak appears to confirm the processor and screen details. Here's what we know.</p>
+                <p className="text-gray-300 mb-4">A new leak appears to confirm the processor and screen details. Here&apos;s what we know.</p>
                 <a href="#" className="text-green-400 hover:underline">Read More</a>
               </div>
             </div>
