@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { FaNewspaper, FaStar, FaShoppingBag, FaTag } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -8,11 +9,11 @@ const Header = () => {
           Xbox Handheld
         </Link>
         <nav>
-          <ul className="flex space-x-8 text-lg">
-            <li><Link href="/news" className="hover:text-xbox-green transition-colors">News</Link></li>
-            <li><Link href="/reviews" className="hover:text-xbox-green transition-colors">Reviews</Link></li>
-            <li><Link href="/accessories" className="hover:text-xbox-green transition-colors">Accessories</Link></li>
-            <li><Link href="/deals" className="hover:text-xbox-green transition-colors">Deals</Link></li>
+          <ul className="flex items-center space-x-8 text-lg">
+            <li><Link href="/news" className="flex items-center gap-2 hover:text-xbox-green transition-colors"><FaNewspaper /><span>News</span></Link></li>
+            <li><Link href="/reviews" className="flex items-center gap-2 hover:text-xbox-green transition-colors"><FaStar /><span>Reviews</span></Link></li>
+            <li><Link href="/accessories" className="flex items-center gap-2 hover:text-xbox-green transition-colors"><FaShoppingBag /><span>Accessories</span></Link></li>
+            <li><Link href="/deals" className="flex items-center gap-2 hover:text-xbox-green transition-colors"><FaTag /><span>Deals</span></Link></li>
           </ul>
         </nav>
       </div>
