@@ -1,3 +1,5 @@
+import AffiliateCard from '@/components/AffiliateCard';
+
 export default function Home() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -38,16 +40,21 @@ export default function Home() {
       <aside className="lg:col-span-1">
         <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
           <h3 className="text-2xl font-bold mb-4">Affiliate Links</h3>
-          <div className="space-y-4">
-            {/* Placeholder for affiliate link */}
-            <div className="border border-gray-600 p-4 rounded-md text-center">
-              <p className="font-semibold">Pre-order Now!</p>
-              <p className="text-sm text-gray-400">Link to retailer</p>
-            </div>
-            {/* Placeholder for ad */}
-            <div className="border border-gray-600 p-4 rounded-md text-center h-48 flex items-center justify-center">
-              <p className="text-gray-500">Ad Placeholder</p>
-            </div>
+          <div className="space-y-6">
+            <AffiliateCard 
+              productName="ROG Xbox Ally X"
+              imageUrl="https://placehold.co/600x400/1a202c/718096"
+              price="$799"
+              retailer="Amazon"
+              affiliateLink="[AMAZON_AFFILIATE_LINK]"
+            />
+            <AffiliateCard 
+              productName="ROG Xbox Ally (Standard)"
+              imageUrl="https://placehold.co/600x400/2d3748/a0aec0"
+              price="$599"
+              retailer="Best Buy"
+              affiliateLink="[BESTBUY_AFFILIATE_LINK]"
+            />
           </div>
         </div>
       </aside>
