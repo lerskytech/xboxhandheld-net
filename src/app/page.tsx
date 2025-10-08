@@ -2,13 +2,15 @@ import AffiliateCard from '@/components/AffiliateCard';
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <>
       {/* Main Content */}
-      <div className="lg:col-span-2">
+      <div className="p-8">
         {/* Hero Section */}
-        <section className="relative bg-cover bg-center p-12 rounded-lg shadow-lg text-center mb-8 h-80 flex flex-col justify-center items-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1593305842137-2d4a1a459357?q=80&w=2670&auto=format&fit=crop')" }}>
-          <div className="absolute inset-0 bg-black opacity-60 rounded-lg"></div>
-          <div className="relative z-10">
+        <section 
+          className="bg-cover bg-center p-12 rounded-lg shadow-lg text-center mb-8 flex flex-col justify-center items-center h-80" 
+          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1593305842137-2d4a1a459357?q=80&w=2670&auto=format&fit=crop')" }}
+        >
+          <div className="bg-black bg-opacity-60 p-10 rounded-lg">
             <h1 className="text-6xl font-bold text-white mb-4 animate-fade-in-down">The Xbox Handheld is Coming</h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">Your ultimate source for news, reviews, and deals on the future of portable Xbox gaming.</p>
             <a href="#latest-news" className="mt-8 inline-block bg-xbox-green text-white font-bold py-4 px-12 rounded-full hover:bg-xbox-light-green hover:text-black transition-all duration-300 shadow-2xl transform hover:scale-110 animate-fade-in-up">Explore News</a>
@@ -48,8 +50,8 @@ export default function Home() {
       </div>
 
       {/* Sidebar */}
-      <aside className="lg:col-span-1">
-        <div className="bg-xbox-dark p-6 rounded-lg shadow-lg border border-gray-800">
+      <aside className="p-8">
+        <div className="bg-xbox-dark p-6 rounded-lg shadow-lg border border-gray-800 sticky top-8">
           <h3 className="text-3xl font-bold mb-6 text-white">Top Deals</h3>
           <div className="space-y-8">
             <AffiliateCard
@@ -81,6 +83,6 @@ export default function Home() {
           </div>
         </div>
       </aside>
-    </div>
+    </>
   );
 }
