@@ -8,7 +8,7 @@ export default function Home() {
         {/* Hero Section */}
         <section 
           className="bg-cover bg-center p-12 rounded-lg shadow-lg text-center mb-8 flex flex-col justify-center items-center h-80" 
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1593305842137-2d4a1a459357?q=80&w=2670&auto=format&fit=crop')" }}
+          style={{ backgroundImage: "url('/images/Banner.jpg')" }}
         >
           <div className="bg-black bg-opacity-60 p-10 rounded-lg">
             <h1 className="text-6xl font-bold text-white mb-4 animate-fade-in-down">The Xbox Handheld is Coming</h1>
